@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="Load_File_Message" xml:space="preserve">
+        <value>Loading {0} {1}...</value>
+    </data>
+    <data name="Skip_File_Message" xml:space="preserve">
+        <value>Skipping {0} {1}...</value>
+    </data>
+    <data name="Import_Fragment_Button" xml:space="preserve">
+        <value>Import compose fragment</value>
+    </data>
+    <data name="Export_Button" xml:space="preserve">
+        <value>Export compose file</value>
+    </data>
+    <data name="Import_Folder_Button" xml:space="preserve">
+        <value>Import compose fragment folder</value>
+    </data>
+    <data name="Dialog_Import" xml:space="preserve">
+        <value>Import</value>
+    </data>
+    <data name="Dialog_Cancel" xml:space="preserve">
+        <value>Cancel</value>
+    </data>
+    <data name="File_Filter_Description" xml:space="preserve">
+        <value>Compose fragment files</value>
+    </data>
+    <data name="Dialog_Export" xml:space="preserve">
+        <value>Export</value>
+    </data>
+</root>

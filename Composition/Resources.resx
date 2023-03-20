@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="Name" xml:space="preserve">
+        <value>Composition</value>
+    </data>
+    <data name="CSS_sequence_character" xml:space="preserve">
+        <value>sequence-character</value>
+    </data>
+    <data name="CSS_sequence-seperator" xml:space="preserve">
+        <value>sequence-seperator</value>
+    </data>
+    <data name="CSS_sequence-key" xml:space="preserve">
+        <value>sequence-key</value>
+    </data>
+    <data name="Style" xml:space="preserve">
+        <value>
+            .sequence-character {
+                font-weight: bolder;
+                font-size: 1.5em;
+            }
+
+            .sequence-seperator {
+                opacity: 0.5;
+            }
+            
+            .sequence-key {
+                font-weight: bold;
+            }
+        </value>
+    </data>
+</root>
