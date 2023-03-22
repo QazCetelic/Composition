@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Composition
+Comment=Manage your compose sequences
+Exec=~/.local/share/composition/Composition
+Icon=input-keyboard
+Terminal=false
+Type=Application
+Categories=Util;
+Keywords=compose;sequence;keyboard;input;
