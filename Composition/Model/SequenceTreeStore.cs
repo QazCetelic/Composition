@@ -45,7 +45,7 @@ public class SequenceTreeStore: TreeStore
                 }
                 else
                 {
-                    Console.WriteLine(Localization.Skip_File_Message, (isFolder(file) ? "folder" : "file"), file);
+                    Console.WriteLine(Localization.Skip_File_Message, isFolder(file) ? "folder" : "file", file);
                 }
             }
         }
@@ -53,7 +53,7 @@ public class SequenceTreeStore: TreeStore
         {
             UnloadFile(filePath);
 
-            List<Sequence> sequences = FileParser.Parse(filePath);
+            List<Sequence> sequences = ComposeSequencesFileParser.Parse(filePath);
 
             string name = Path.GetFileName(filePath);
             name = Regex.Replace(name, @"\.compose$", "", RegexOptions.IgnoreCase);

@@ -17,8 +17,9 @@ public class SequenceTreeView: TreeView
         characterColumn.Title = "Result";
         CellRendererText characterCell = new();
         characterCell.Style = Pango.Style.Oblique;
+        characterCell.ForegroundRgba = this.StyleContext.GetColor(StateFlags.Link);
         characterColumn.PackStart(characterCell, true);
-        
+
         TreeViewColumn toggleColumn = new();
         toggleColumn.Title = "Enabled";
         CellRendererToggle toggleCell = new();
@@ -31,7 +32,16 @@ public class SequenceTreeView: TreeView
         keysymsColumn.AddAttribute(keysymsCell, "text", 0);
         characterColumn.AddAttribute(characterCell, "text", 1);
         toggleColumn.AddAttribute(toggleCell, "active", 3);
-        
+
+        characterCell.Editable = true;
+
+        characterCell.Edited += (o, args) =>
+        {
+            TreeIter iter;
+            Model.GetIter(out iter, new TreePath(args.Path));
+            Model.SetValue(iter, 1, args.NewText);
+        };
+
         toggleCell.Toggled += (widget, path) =>
         {
             TreeIter iter;

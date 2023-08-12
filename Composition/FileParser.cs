@@ -6,25 +6,16 @@ using Composition.Model;
 
 namespace Composition;
 
-public static class FileParser
+public static class ComposeSequencesFileParser
 {
     public static List<Sequence> Parse(string filePath)
     {
-        var sequences = new List<Sequence>();
-        var lines = File.ReadAllLines(filePath);
-        foreach (string line in lines)
-        {
-            Sequence? sequence = ParseLine(line);
-            if (sequence != null)
-            {
-                sequences.Add(sequence);
-            }
-        }
-        return sequences;
+        string[] lines = File.ReadAllLines(filePath);
+        return lines.Select(ParseLine).Where(sequence => sequence != null).ToList()!;
     }
     
-    private static readonly Regex _whiteSpaceRegex = new Regex("\\s+");
-    private static readonly Regex _sequenceRegex = new Regex("<Multi_key>\\s+(?<keysyms><[^>]+>(\\s+<[^>]+>)*)\\s*:\\s*\"(?<result>[^\"]+)\"(\\s+.+)?\\s*(#.+)?");
+    private static readonly Regex _whiteSpaceRegex = new("\\s+");
+    private static readonly Regex _sequenceRegex = new("<Multi_key>\\s+(?<keysyms><[^>]+>(\\s+<[^>]+>)*)\\s*:\\s*\"(?<result>[^\"]+)\"(\\s+.+)?\\s*(#.+)?");
     private static Sequence? ParseLine(string line)
     {
         Match match = _sequenceRegex.Match(line);
