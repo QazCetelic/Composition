@@ -31,7 +31,7 @@ public class SequenceTreeStore: TreeStore
     
     public void LoadFile(string filePath)
     {
-        bool isFolder(string path) => File.GetAttributes(path).HasFlag(FileAttributes.Directory);
+        static bool isFolder(string path) => File.GetAttributes(path).HasFlag(FileAttributes.Directory);
         
         Console.WriteLine(Localization.Load_File_Message, (isFolder(filePath) ? "folder" : "file"), filePath);
         if (isFolder(filePath))
@@ -74,21 +74,19 @@ public class SequenceTreeStore: TreeStore
     public Dictionary<string, List<Sequence>> GetEnabledSequences()
     {
         var sequences = new Dictionary<string, List<Sequence>>();
-        TreeIter iter;
-        if (GetIterFirst(out iter))
+        if (GetIterFirst(out TreeIter iter))
         {
             do
             {
-                string filePath = (string) GetValue(iter, 0);
-                bool fileEnabled = (bool) GetValue(iter, 3);
+                string filePath = (string)GetValue(iter, 0);
+                bool fileEnabled = (bool)GetValue(iter, 3);
                 sequences[filePath] = new List<Sequence>();
-                TreeIter childIter;
-                if (fileEnabled && IterChildren(out childIter, iter))
+                if (fileEnabled && IterChildren(out TreeIter childIter, iter))
                 {
                     do
                     {
-                        Sequence sequence = (Sequence) GetValue(childIter, 2);
-                        bool sequenceEnabled = (bool) GetValue(childIter, 3);
+                        Sequence sequence = (Sequence)GetValue(childIter, 2);
+                        bool sequenceEnabled = (bool)GetValue(childIter, 3);
                         if (sequenceEnabled)
                         {
                             sequences[filePath].Add(sequence);
