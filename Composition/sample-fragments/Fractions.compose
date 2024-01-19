@@ -1,0 +1,24 @@
+<Multi_key> <1> <slash> <space> : "⅟"
+
+<Multi_key> <0> <slash> <3> : "↉"
+<Multi_key> <1> <slash> <3> : "⅓"
+<Multi_key> <2> <slash> <3> : "⅔"
+
+<Multi_key> <1> <slash> <5> : "⅕"
+<Multi_key> <2> <slash> <5> : "⅖"
+<Multi_key> <3> <slash> <5> : "⅗"
+<Multi_key> <4> <slash> <5> : "⅘"
+
+<Multi_key> <1> <slash> <6> : "⅙"
+<Multi_key> <5> <slash> <6> : "⅚"
+
+<Multi_key> <1> <slash> <7> : "⅐"
+
+<Multi_key> <1> <slash> <8> : "⅛"
+<Multi_key> <3> <slash> <8> : "⅜"
+<Multi_key> <5> <slash> <8> : "⅝"
+<Multi_key> <7> <slash> <8> : "⅞"
+
+<Multi_key> <1> <slash> <9> : "⅑"
+
+<Multi_key> <1> <slash> <10> : "⅒"

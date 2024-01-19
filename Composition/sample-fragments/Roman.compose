@@ -1,0 +1,43 @@
+# Uppercase
+<Multi_key> <1> <R> : "Ⅰ"
+<Multi_key> <2> <R> : "Ⅱ"
+<Multi_key> <3> <R> : "Ⅲ"
+<Multi_key> <4> <R> : "Ⅳ"
+<Multi_key> <5> <R> : "Ⅴ"
+<Multi_key> <6> <R> : "Ⅵ"
+<Multi_key> <7> <R> : "Ⅶ"
+<Multi_key> <8> <R> : "Ⅷ"
+<Multi_key> <9> <R> : "Ⅸ"
+<Multi_key> <1> <0> <R> : "Ⅹ"
+<Multi_key> <1> <1> <R> : "Ⅺ"
+<Multi_key> <1> <2> <R> : "Ⅻ"
+<Multi_key> <5> <0> <R> : "Ⅼ"
+<Multi_key> <1> <0> <0> <R> : "Ⅽ"
+<Multi_key> <5> <0> <0> <R> : "Ⅾ"
+<Multi_key> <1> <0> <0> <0> <R> : "Ⅿ"
+<Multi_key> <5> <0> <0> <0> <R> : "ↁ"
+<Multi_key> <1> <0> <0> <0> <0> <R> : "ↂ"
+
+# Lowercase
+<Multi_key> <1> <r> : "ⅰ"
+<Multi_key> <2> <r> : "ⅱ"
+<Multi_key> <3> <r> : "ⅲ"
+<Multi_key> <4> <r> : "ⅳ"
+<Multi_key> <5> <r> : "ⅴ"
+<Multi_key> <6> <r> : "ⅵ"
+<Multi_key> <7> <r> : "ⅶ"
+<Multi_key> <8> <r> : "ⅷ"
+<Multi_key> <9> <r> : "ⅸ"
+<Multi_key> <1> <0> <r> : "ⅹ"
+<Multi_key> <1> <1> <r> : "ⅺ"
+<Multi_key> <1> <2> <r> : "ⅻ"
+<Multi_key> <5> <0> <r> : "ⅼ"
+<Multi_key> <1> <0> <0> <r> : "ⅽ"
+<Multi_key> <5> <0> <0> <r> : "ⅾ"
+<Multi_key> <1> <0> <0> <0> <r> : "ⅿ"
+
+# Variants
+<Multi_key> <1> <0> <0> <0> <c> <d> <r> : "ↀ" # 1k CD
+<Multi_key> <6> <l> <f> <r>             : "ↅ"  # Late form
+<Multi_key> <5> <0> <e> <f> <r>         : "ↆ"  # Early form
+<Multi_key> <1> <0> <0> <Left> <r>      : "Ↄ"  # Reversed
